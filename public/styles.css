@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+main {
+  background-image: url("images/background.png");
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account_login_form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.account_login_form h1 {
+  color: #4d9fd7;
+  font-weight: bold;
+}
+
+.account_login_form .subtitle {
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.account_login_form hr {
+  margin-bottom: 30px;
+  border-top: 5px solid #e6e6e6;
+  border-radius: 1rem;
+  width: 60%;
+}
+
+.account_login_form label {
+  color: #29597a;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.account_login_form input {
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  padding: 8px;
+}
+
+.account_login_form input:focus {
+  outline: none;
+}
+
+.account_login_form button {
+  background-color: #42ad74;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
