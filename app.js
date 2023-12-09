@@ -46,6 +46,6 @@ app.post("/create-login-link", jsonParser, async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log("Running on port 8080");
+app.listen(7001, () => {
+  console.log("Running on port 7001");
 });
