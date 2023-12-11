@@ -3,6 +3,12 @@ const accountLoginForm = document.querySelector(".account_login_form");
 
 accountLoginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  const accountID = accountIDElement.value;
+  if (accountID.trim() === "") {
+    alert("Please enter your account ID");
+    return;
+  }
+
   try {
     // Attempts to create login link
     const response = await fetch("/create-login-link", {
@@ -11,7 +17,7 @@ accountLoginForm.addEventListener("submit", async (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        account_id: accountIDElement.value,
+        account_id: accountID,
       }),
     });
     if (response.ok) {

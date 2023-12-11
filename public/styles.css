@@ -72,3 +72,16 @@ main {
   border-radius: 8px;
   font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+  .account_login_form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .account_login_form {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
