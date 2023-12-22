@@ -2,6 +2,7 @@ require("dotenv").config();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const express = require("express");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 const app = express();
 
 const jsonParser = bodyParser.json();
@@ -42,6 +43,7 @@ app.post("/create-login-link", jsonParser, async (req, res) => {
     res.json({
       status: "failed",
       messsage: "Account ID does not exist!",
+      error: error,
     });
   }
 });
